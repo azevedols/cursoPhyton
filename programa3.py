@@ -1,0 +1,5 @@
+nome = input('Digite seu nome: \n')
+print(nome)
+numero = input('Digite um número: \n')
+print('O número digitado foi ' + numero)
+print('O número digitado foi{}'.format(numero))
