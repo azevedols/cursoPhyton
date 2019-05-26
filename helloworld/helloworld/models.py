@@ -26,4 +26,11 @@ class Funcionario(models.Model):
 		blank=False
 		)
 
+	remuneracao = models.DecimalField(
+		max_digits=8,
+		decimal_places=2,
+		null=False,
+		blank=False
+		)
+
 	objetos = models.Manager()
