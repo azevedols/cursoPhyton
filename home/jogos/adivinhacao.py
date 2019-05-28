@@ -36,7 +36,7 @@ if(nivel == 1):
 		pontuacao_atual = abs(pontuacao_atual - chute) 
 		rodada = rodada + 1
 
-	pontuacao_atual = PONTUACAO - numero_secreto - pontuacao_atual
+	pontuacao_atual = PONTUACAO - numero_secreto - (pontuacao_atual * 5)
 	print('Sua pontuação foi: {}'.format(pontuacao_atual))
 	print('O número secreto é: {}'.format(numero_secreto))
 
@@ -66,7 +66,7 @@ elif(nivel == 2):
 		pontuacao_atual = abs(pontuacao_atual - chute)
 		rodada = rodada + 1
 
-	pontuacao_atual = PONTUACAO - numero_secreto - pontuacao_atual
+	pontuacao_atual = PONTUACAO - numero_secreto - (pontuacao_atual * 3)
 	print('Sua pontuação foi: {}'.format(pontuacao_atual))
 	print('O número secreto é: {}'.format(numero_secreto))
 
