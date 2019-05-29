@@ -7,6 +7,8 @@ primeiro = lista[0]
 ocorrencia = 0
 cont = 0
 media = 0
+somaNegativos = 0
+listaNegativos = []
 
 for numero in lista:
 	teste = numero
@@ -46,3 +48,11 @@ for numero in lista:
 media = teste/cont
 
 print('A média da lista {} é: {}\n'.format(lista, media))
+
+for numero in lista:
+	if(numero < 0):
+		somaNegativos += numero
+		listaNegativos.append(numero)
+
+print('Os números em negativos da lista são: {}, e a somas destes números são: {}'.format(listaNegativos, somaNegativos))
+
